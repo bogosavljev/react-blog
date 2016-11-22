@@ -1,0 +1,167 @@
+@import "theme.scss";
+
+body {
+    margin:0 auto;
+    max-width: 1024px;
+    font-family: $regular-font;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+h1 {
+    color: $color-error;
+    font-size: $head-title-size;
+}
+
+h3 {
+    font-family: $regular-font;
+    font-size: $head-title-size;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: $small-font-size;
+    margin:0;
+}
+
+.btn-primary {
+    background-color: $color-view;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: $color-bg;
+    text-decoration: none;
+    font-size: $bigger-font-size;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: $button-hover;
+}
+
+.btn-danger {
+    background-color: $color-error;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: $color-bg;
+    text-decoration: none;
+    font-size: $bigger-font-size;
+    border-width: 0;
+    margin-left: 20px;
+}
+
+.btn-danger:hover {
+    background-color: $button-cancel-hover;
+}
+
+.pull-xs-right {
+    float: right;
+}
+
+.text-xs-right {
+    float: right;
+    .btn-primary {
+        background-color: $color-view;
+        padding: 15px 30px;
+        border-radius: 4px;
+        color: $color-bg;
+        text-decoration: none;
+        font-size: $bigger-font-size;
+        border-width: 0;
+        cursor: pointer;
+        top: -15px;
+        position: relative;
+    }
+
+    .btn-primary:hover {
+        background-color: $button-hover;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group, label {
+    display: block;
+}
+
+input, textarea {
+    padding: 12px 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 50%;
+    font-size: $regular-font-size;
+}
+
+.has-danger input, .has-danger textarea {
+    color: $color-error;
+    border-color: $color-error;
+}
+
+.form-group .text-help, .form-group .text-help {
+    color: $color-error;
+    border-color: $color-error;
+}
+
+textarea {
+    line-height: 1.5em;
+}
+
+.list-group {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.list-group-item {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 20px;
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    width: 96.1%;
+    font-size: $bigger-font-size;
+
+    span.pull-xs-right {
+        float: right;
+        font-size: $regular-font-size;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item:hover {
+    background-color: $color-hover;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
